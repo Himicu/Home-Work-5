@@ -27,20 +27,16 @@ int SubtractionMinMax(int[] arr)
     int min = arr[0], max = arr[0];
     for (int i = 0; i < arr.Length; i++)
     {
-        for (int j = 0; j < arr.Length; j++)
-        {
-            if (min > arr[j])
+            if (min > arr[i])
             {
-                min = arr[j];
+                min = arr[i];
                 Console.WriteLine($"min - {min}"); //оставила для наглядности
             }
-            if (max < arr[j])
+            if (max < arr[i])
             {
-                max = arr[j];
+                max = arr[i];
                 Console.WriteLine($"max - {max}"); //оставила для наглядности
             }
-        }
-
     }
     return (max - min);
 }
